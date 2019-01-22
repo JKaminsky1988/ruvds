@@ -1,0 +1,6 @@
+Create new repository in github
+git clone https://github.com/[user_name]/[repo_name].git
+npm install -g create-react-app
+create-react-app [dir_name]
+cd [dir_name]
+npm start
