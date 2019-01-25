@@ -1,18 +1,20 @@
-import React, { Component, Fragment } from 'react'
-import './css/all.min.css';
+import React, { Component } from "react";
+import Grid from "@material-ui/core/Grid";
 
-import Header from "./components/Header"
-import Main from "./components/Main"
-import Footer from "./components/Footer"
+import "./css/all.min.css";
+
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
+      <Grid container>
         <Header />
         <Main />
         <Footer />
-      </Fragment>
+      </Grid>
     );
   }
 }

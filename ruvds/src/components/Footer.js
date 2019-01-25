@@ -1,11 +1,12 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from "react";
+import Grid from "@material-ui/core/Grid";
 
 class Footer extends Component {
   render() {
     return (
-      <footer>
+      <Grid item xs={12} className="footer">
         <p>footer content</p>
-      </footer>
+      </Grid>
     );
   }
 }

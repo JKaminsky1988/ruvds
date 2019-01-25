@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.0",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
