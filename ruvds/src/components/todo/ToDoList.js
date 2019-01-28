@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
 
-import todo_list from "../../fixtures/todo_list.js";
+// import todo_list from "../../fixtures/todo_list.js";
 
 class ToDoList extends Component {
   render() {
