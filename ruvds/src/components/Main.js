@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Grid from "@material-ui/core/Grid";
+import React, { Component } from "react"
+import Grid from "@material-ui/core/Grid"
 
-import CreateToDoItem from "./todo/CreateToDoItem.js";
-import ToDoList from "./todo/ToDoList.js";
+import CreateToDoItem from "./todo/CreateToDoItem.js"
+import ToDoList from "./todo/ToDoList.js"
 
 class Main extends Component {
   render() {
@@ -23,8 +23,8 @@ class Main extends Component {
           </Grid>
         </Grid>
       </Grid>
-    );
+    )
   }
 }
 
-export default Main;
+export default Main
