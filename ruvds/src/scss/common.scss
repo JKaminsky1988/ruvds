@@ -1,13 +1,14 @@
 body {
-  background-color: lighten(#000, 90%);
+	background-color: lighten(#000, 90%);
+	overflow: hidden;
 }
 
 footer,
 header {
-  background-color: #000;
-  text-align: center;
-  color: #fff;
-  padding: 30px 0;
+	background-color: #000;
+	text-align: center;
+	color: #fff;
+	padding: 30px 0;
 }
 
 header {
@@ -17,5 +18,5 @@ footer {
 }
 
 .todo_item {
-  padding: 10px 0;
+	padding: 10px 0;
 }

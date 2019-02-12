@@ -14,23 +14,19 @@ class CreateToDoItem extends Component {
     this.handleChangeInput = this.handleChangeInput.bind(this)
   }
 
-  getInputValue = e => {
-    console.log(this.state.inputValue)
+  getInputValue = () => {
     this.state.dealsList.push(this.state.inputValue)
   }
 
-  handleChangeInput(event) {
-    // debugger;
+  handleChangeInput = e => {
     this.setState({
-      inputValue: event.target.value
+      inputValue: e.target.value
     })
+    console.log("***** handleChangeInput *****")
   }
-const todo_list = {
-}
+
   render() {
-    const { inputValue } = this.state
-    console.log("dealsList", this.state.dealsList)
-    console.log("props", this.props)
+    const { inputValue, dealsList } = this.props
 
     return (
       <Grid
@@ -49,7 +45,7 @@ const todo_list = {
                   name="create_input"
                   className="create_input"
                   type="text"
-                  autoComplete="true"
+                  autoComplete="false"
                   value={inputValue}
                   variant="standard"
                   onChange={this.handleChangeInput}

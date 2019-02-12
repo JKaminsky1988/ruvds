@@ -1,22 +1,22 @@
-import React, { Component } from "react";
-import Grid from "@material-ui/core/Grid";
+import React, { Component } from "react"
+import Grid from "@material-ui/core/Grid"
 
-import "./css/all.min.css";
+import "./css/all.min.css"
 
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Header from "./containers/Header"
+import Main from "./containers/Main"
+import Footer from "./containers/Footer"
 
 class App extends Component {
-  render() {
-    return (
-      <Grid container>
-        <Header />
-        <Main />
-        <Footer />
-      </Grid>
-    );
-  }
+	render() {
+		return (
+			<Grid container>
+				<Header />
+				<Main />
+				<Footer />
+			</Grid>
+		)
+	}
 }
 
-export default App;
+export default App
