@@ -1,0 +1,3 @@
+export const PRIORITY_STANDART = 0,
+	PRIORITY_LOW = 1,
+	PRIORITY_HIGH = 2

@@ -10,7 +10,7 @@ import Footer from "./containers/Footer"
 class App extends Component {
 	render() {
 		return (
-			<Grid container>
+			<Grid container spacing={40} justify={"center"}>
 				<Header />
 				<Main />
 				<Footer />

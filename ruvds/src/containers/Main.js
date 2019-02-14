@@ -1,17 +1,15 @@
-import React, { Component } from "react"
-import Grid from "@material-ui/core/Grid"
+import React, { Component, Fragment } from "react"
 
 // import CreateToDoItem from "../components/todo/CreateToDoItem"
 import ToDoList from "../components/todo/ToDoList"
-
 class Main extends Component {
-  render() {
-    return (
-      <Grid item xs={12}>
-        <ToDoList />
-      </Grid>
-    )
-  }
+	render() {
+		return (
+			<Fragment>
+				<ToDoList />
+			</Fragment>
+		)
+	}
 }
 
 export default Main
