@@ -3,12 +3,11 @@ import Grid from "@material-ui/core/Grid"
 import Select from "@material-ui/core/Select"
 import Input from "@material-ui/core/Input"
 import InputAdornment from "@material-ui/core/InputAdornment"
-import { Add } from "@material-ui/icons"
-import {
-  PRIORITY_STANDART,
-  PRIORITY_LOW,
-  PRIORITY_HIGH
-} from "../../fixtures/todoConst"
+import { Add, Grade } from "@material-ui/icons"
+import MenuItem from "@material-ui/core/MenuItem"
+import FormHelperText from "@material-ui/core/FormHelperText"
+
+import { PRIORITY_STANDART, PRIORITY_HIGH } from "../../fixtures/todoConst"
 
 class CreateToDoItem extends Component {
   state = {
@@ -62,14 +61,23 @@ class CreateToDoItem extends Component {
               <Select
                 className="priority_select"
                 variant="standard"
-                value={this.state.priority}
+                value={this.state.itemTodo.priority}
                 name="priority"
-                native
                 onChange={this.handleChangePriority}
               >
-                <option value={PRIORITY_STANDART}>standart</option>
-                <option value={PRIORITY_LOW}>low</option>
-                <option value={PRIORITY_HIGH}>high</option>
+                <MenuItem
+                  className="menu_item"
+                  value={PRIORITY_STANDART}
+                  selected={true}
+                >
+                  standart
+                </MenuItem>
+                <MenuItem className="menu_item" value={PRIORITY_HIGH}>
+                  <span className="icon_bl">
+                    <Grade />
+                  </span>
+                  high
+                </MenuItem>
               </Select>
             </Grid>
             <Grid item xs={12} sm={2} className="create_btn_bl">

@@ -3,6 +3,10 @@ import Grid from "@material-ui/core/Grid"
 import Paper from "@material-ui/core/Paper"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
+import ButtonBase from "@material-ui/core/ButtonBase"
+import IconButton from "@material-ui/core/IconButton"
+import { Delete } from "@material-ui/icons"
+
 import CreateToDoItem from "./CreateToDoItem"
 
 class ToDoList extends Component {
@@ -61,10 +65,7 @@ class ToDoList extends Component {
 								)}
 								{this.state.dealsList.map((deal, idx) => (
 									<ListItem key={idx} className="todo_item">
-										<label
-											htmlFor={`checked-${idx}`}
-											className={deal.isChecked === true ? "checked_deal" : ""}
-										>
+										<label htmlFor={`checked-${idx}`}>
 											<input
 												type="checkbox"
 												onChange={e => {
@@ -74,7 +75,14 @@ class ToDoList extends Component {
 												id={`checked-${idx}`}
 												checked={deal.isChecked}
 											/>
-											{deal.name} {deal.priority}
+											<span
+												className={
+													deal.isChecked === true ? "checked_deal" : ""
+												}
+											>
+												{deal.name}
+											</span>
+											{deal.priority}
 										</label>
 									</ListItem>
 								))}
